@@ -1,0 +1,6 @@
+target/js
+node_modules
+target/main.js
+.vscode/tasks.json
+.tmp
+

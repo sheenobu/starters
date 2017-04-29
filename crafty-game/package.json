@@ -1,0 +1,25 @@
+{
+  "name": "crafty-game",
+  "version": "0.1.0",
+  "description": "",
+  "main": "src/main.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "precompile": "./node_modules/babel-cli/bin/babel.js src --out-dir .tmp",
+    "compile": "./node_modules/.bin/browserify -e .tmp/game.js -o target/main.js",
+    "clean": "rm -rf .tmp target/main.js"
+  },
+  "author": "",
+  "license": "",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.4.0",
+    "browserify": "^14.3.0"
+  },
+  "dependencies": {
+    "craftyjs": "^0.8.0"
+  }
+}
